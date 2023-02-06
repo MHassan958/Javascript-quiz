@@ -1,0 +1,60 @@
+1. Javascript is an _______ language?
+
+d) None of the above
+
+
+2. Which of the following keywords is used to define a variable in Javascript?
+
+c) Both A and B
+
+3. How the objects are passed in JavaScript?
+
+c) Both by value and reference
+
+
+4. Which of the following methods is used to access HTML elements using Javascript?
+
+c) Both A and B
+
+
+
+5. How can a datatype be declared to be a constant type?
+
+a) const
+
+
+6. What will be the output of the following code snippet?
+
+
+<!-- var a = "Scaler";
+var result = a.substring(2, 4);
+document.write(result); -->
+
+a) al
+
+
+7. What will be the output of the following code snippet?
+
+<!-- var x = 12;
+var y = 8;
+var res = eval("x+y");
+console.log(res); -->
+
+
+a) 20
+
+
+
+8. AJAX is about updating ______, without reloading the full-page.
+
+
+a) parts of a web page
+
+
+
+9. In Github After you add a file, it becomes
+
+b) Staged
+
+
+10. What command lets you create a connection between a local and remote repository?
