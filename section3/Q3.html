@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sum of Odd Numbers</title>
+  </head>
+  <body>
+    <label for="number-input">Enter a number greater than 5 digits:</label>
+    <input type="text" id="number-input" />
+    <button id="calculate-btn">Calculate</button>
+    <p id="result"></p>
+    <script>
+      const numberInput = document.querySelector("#number-input");
+      const calculateBtn = document.querySelector("#calculate-btn");
+      const result = document.querySelector("#result");
+
+      calculateBtn.addEventListener("click", () => {
+        const number = numberInput.value;
+        let sum = 0;
+        for (let i = 0; i < number.length; i++) {
+          const digit = parseInt(number[i]);
+          if (digit % 2 !== 0) {
+            sum += digit;
+          }
+        }
+        result.textContent = `Sum of odd digits: ${sum}`;
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+1. Differentiate arrow functions and regular functions.
+
+Arrow functions and regular functions are two types of functions in JavaScript. The main differences are:
+Syntax: Arrow functions use a concise syntax with a 'fat arrow' (=>) to define the function, while regular functions use the 'function' keyword.
+
+'this' keyword: Arrow functions do not bind their own 'this' context, but inherit it from the enclosing scope. Regular functions create their own 'this' context based on how they are called.
+
+'arguments' object: Arrow functions do not have their own 'arguments' object, but can use the 'arguments' object of the enclosing scope. Regular functions have their own 'arguments' object.
+
+
+2. Write any three different ways to get an element from DOM? 
+
+Here are three different ways to get an element from the DOM in JavaScript:
+
+By ID: Use the 'getElementById' method to get an element by its ID. For example, to get an element with ID 'my-element', use:
+javascript
+
+
+const element = document.getElementById('my-element');
+
+By class name: Use the 'getElementsByClassName' method to get an array-like collection of elements with the same class name. For example, to get all elements with class name 'my-class', use:
+javascript
+
+
+const elements = document.getElementsByClassName('my-class');
+By tag name: Use the 'getElementsByTagName' method to get an array-like collection of elements with the same tag name. For example, to get all 'div' elements, use:
+javascript
+
+
+const elements = document.getElementsByTagName('div');

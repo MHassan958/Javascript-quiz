@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sum of Interior Angles</title>
+  </head>
+  <body>
+    <label for="number-input">Enter the number of sides:</label>
+    <input type="number" id="number-input" />
+    <button id="calculate-btn">Calculate</button>
+    <p id="result"></p>
+    <script>
+      const numberInput = document.querySelector("#number-input");
+      const calculateBtn = document.querySelector("#calculate-btn");
+      const result = document.querySelector("#result");
+
+      calculateBtn.addEventListener("click", () => {
+        const n = parseInt(numberInput.value);
+        const sum = (n - 2) * 180;
+        result.textContent = `Sum of interior angles: ${sum} degrees`;
+      });
+    </script>
+  </body>
+</html>

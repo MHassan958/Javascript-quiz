@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Age Calculator</title>
+  </head>
+  <body>
+    <label for="dob-input">Enter your date of birth:</label>
+    <input type="date" id="dob-input" />
+    <button id="calculate-btn">Calculate</button>
+    <p id="result"></p>
+    <script>
+      const dobInput = document.querySelector("#dob-input");
+      const calculateBtn = document.querySelector("#calculate-btn");
+      const result = document.querySelector("#result");
+
+      calculateBtn.addEventListener("click", () => {
+        const dob = new Date(dobInput.value);
+        const today = new Date();
+        const diff = today.getTime() - dob.getTime();
+
+        const year = Math.floor(diff / (1000 * 60 * 60 * 24 * 365));
+        const month = Math.floor(diff / (1000 * 60 * 60 * 24 * 30)) % 12;
+        const day = Math.floor(diff / (1000 * 60 * 60 * 24)) % 30;
+
+        result.textContent = `You are ${year} years, ${month} months, and ${day} days old.`;
+      });
+    </script>
+  </body>
+</html>
