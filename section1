@@ -1,0 +1,48 @@
+1. The behavior of the instances present of a class inside a method is defined
+b) Class
+
+2. When a class B can extend another class A, we say that?
+
+a) A is the superclass and B is the subclass
+
+3. How the objects are passed in JavaScript?
+
+b) By reference
+
+4. Which keyword is used to inherit a class or abstract class?
+
+a) extends
+
+
+5. Which feature of OOP encourages the code reusability?
+
+c) Inheritance
+
+
+6. What among the following is an appropriate when an event occurs when the user
+clicks on an element?
+
+a) onclick
+
+
+7. Consider the below code and identify the correct code in order to fetch the value entered in username text field?
+
+< body>
+< form name="register">
+ Enter username < input value="John" id="name" name="username">
+< /form>
+< /body>
+
+b) document.getElementById("name").value
+
+8. AJAX is about updating ______, without reloading the full-page.
+
+a) parts of a web page
+
+9. What is the correct syntax to create an XMLHttpRequest object?
+
+d) variable = new XMLHttpRequest();
+
+10. Which of the following code will throw an error?
+
+c) JSON.parse(undefined)
